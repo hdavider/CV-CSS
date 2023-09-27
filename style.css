@@ -1,22 +1,92 @@
-table {
-    border-collapse: collapse;
-    border-spacing: 0px;
-  }
-  table,
-  th,
-  td {
-    padding: 5px;
-    border: 1px solid black;
-  }
-  
-  #contenedor {
+
+/* #contenedor {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 #principal {
-  width: 75%;
+  width: 85%;
 }
 #sidebar {
-  width: 25%;
+  width: 15%;
+  background-color: #3F88C5;
 }
+
+#imagen {
+/*   display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right; */
+  
+/* }
+.columna-izquierda img {
+  max-width: 100%; /* La imagen no excederá el ancho de su contenedor */
+ /*  height: auto; */ /* Mantener la relación de aspecto */
+/* } */ 
+/* .imagen-centrada img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+} */ 
+/* Estilos para el contenedor principal */
+.contenedor {
+  display: flex; /* Usar flexbox para dividir las columnas */
+  margin: 0; /* Eliminar los márgenes predeterminados del cuerpo de la página */
+}
+
+/* Estilos para la columna izquierda */
+.columna-izquierda {
+  flex: 0.3; /* La columna izquierda ocupa 1 parte de 2 partes en total (50%) */
+  text-align: center; /* Centrar el contenido horizontalmente */
+  padding: 0; /* Eliminar el relleno predeterminado (margen interno) */
+  background: linear-gradient(to bottom, #FFFFFF, #0089ff); /* Degradado azul suave */
+  /* Agregar otros estilos de fondo si es necesario */
+}
+
+/* Estilos para la imagen en la columna izquierda */
+.columna-izquierda img {
+  max-width: 100%; /* La imagen no excederá el ancho de su contenedor */
+  height: auto; /* Mantener la relación de aspecto */
+  width:50%;
+  height: auto;
+  margin: 0; /* Eliminar cualquier margen en la imagen */
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilos para la columna derecha */
+.columna-derecha {
+  flex: 1; /* La columna izquierda ocupa 1 parte de 2 partes en total (50%) */
+  text-align: left; /* Centrar el contenido horizontalmente */
+  padding: 0; /* Eliminar el relleno predeterminado (margen interno) */
+  background: linear-gradient(to bottom, #FFFFFF, #DAF0EE); /* Degradado azul suave */
+  /* Agregar otros estilos de fondo si es necesario */
+  margin-left: 2%;
+}
+
+.columna-izquierda h3 {
+  font-size: 40px; /* Tamaño de fuente personalizado para h3 */
+  /* Otros estilos de texto si es necesario */
+}
+.icono {
+  width: 10% !important; /* Tamaño del icono */
+  height: auto;
+  margin: 0; /* Eliminar cualquier margen alrededor del icono */
+}
+
+/* Estilos para la lista con barra */
+.lista-con-barra {
+  list-style-type: none; /* Eliminar los puntos predeterminados de la lista */
+  padding-left: 0; /* Eliminar el relleno predeterminado de la lista */
+}
+
+/* Estilos para los elementos de la lista */
+.lista-con-barra li {
+  padding-left: 10px; /* Espacio entre el borde izquierdo y el contenido */
+  
+  border-left: 60px solid #FFFFFF; /* Borde izquierdo con color */
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+  border-right: 60px solid #FFFFFF; /* Borde izquierdo con color */
+  border-radius: 5px; /* Borde redondeado */
+ 
+}
+
