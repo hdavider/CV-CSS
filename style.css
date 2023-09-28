@@ -6,7 +6,7 @@
 
 /* Estilos para la columna izquierda */
 .columna-izquierda {
-  flex: 0.3; /* Tamaño de la columna izquierda*/
+  flex: 0.2; /* Tamaño de la columna izquierda*/
   text-align: center; /* Centrar el contenido */
   padding: 0; /* Eliminar el relleno predeterminado (margen interno) */
   background: linear-gradient(to bottom, #FFFFFF, #0089ff); /* Degradado azul suave */
@@ -27,9 +27,8 @@
 .columna-derecha {
   flex: 1; /* La columna izquierda ocupa 1 parte de 2 partes en total (50%) */
   text-align: left; /* Centrar el contenido horizontalmente */
-  padding: 0; /* Eliminar el relleno predeterminado*/
   background: linear-gradient(to bottom, #FFFFFF, #DAF0EE); /* Degradado gris suave*/
-  margin-left: 2%;
+  max-width: 7.5in;
 }
 
 .columna-izquierda h3 {
@@ -59,3 +58,21 @@
  
 }
 
+/* Clase para aplicar color a los textos */
+.texto-coloreado {
+  color: #0089ff; /* Cambia el color según tu preferencia */
+}
+
+.texto-derecha {
+  margin-left: 20px; /* margen */
+}
+
+
+/* Clase para aplicar un fondo de cuadro */
+.titulo-cuadro {
+  background-color: #01549c; /* Cambia el color de fondo */
+  color: #FFFFFF; /* Cambia el color del texto */
+  padding: 10px; /* Espacio alrededor del texto dentro del cuadro */
+  border-radius: 10px; /* Bordes redondeados del cuadro */
+  display: inline-block; /* Hace que el cuadro se ajuste al contenido del título */
+}
